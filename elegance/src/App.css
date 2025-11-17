@@ -1,4 +1,4 @@
-/* --- 3. Navbar --- */
+/* --- Navbar --- */
 .navbar {
   background: #ffffff;
   border-bottom: 1px solid #eee;
@@ -6,7 +6,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* ✨ NEW: Subtle shadow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .navbar .container {
@@ -34,17 +34,15 @@
   text-decoration: none;
   color: #555;
   font-weight: 500;
-  padding-bottom: 5px; /* ✨ NEW: Space for the border */
-  border-bottom: 2px solid transparent; /* ✨ NEW: Placeholder for active state */
-  transition: color 0.3s ease, border-color 0.3s ease; /* ✨ NEW: Transition */
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-/* ✨ NEW: Hover for nav links */
 .nav-links a:hover {
   color: #C65A0D;
 }
 
-/* ✨ UPDATED: Active link style from screenshot */
 .nav-links a.active {
   color: #C65A0D;
   border-bottom: 2px solid #C65A0D;
