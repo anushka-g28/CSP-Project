@@ -410,3 +410,123 @@ p { color: #555; }
   margin: 0;
   color: #333;
 }
+
+/* --- Portfolio Page Styles --- */
+
+.portfolio-header {
+  background-color: #F8F8F8;
+  text-align: center;
+  padding: 4rem 0;
+}
+.portfolio-header h2 {
+  font-size: 2.5rem;
+}
+.portfolio-header p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 1rem auto 0;
+}
+
+.portfolio-gallery {
+  padding: 4rem 0;
+}
+
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 20px; 
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter-btn:hover {
+  background-color: #f0f0f0;
+}
+.filter-btn.active {
+  background-color: #C65A0D;
+  color: #ffffff;
+  border-color: #C65A0D;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5rem;
+}
+
+.portfolio-item {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05); 
+}
+
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 1rem 1rem;
+  color: #ffffff;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  font-family: 'Georgia', serif;
+}
+.portfolio-overlay h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* New CTA Banner */
+.discuss-project-section {
+  background-color: #C65A0D;
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 0;
+}
+.discuss-project-section h2 {
+  color: #ffffff;
+}
+.discuss-project-section p {
+  color: #eee;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-light-transparent {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.btn-light-transparent:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
