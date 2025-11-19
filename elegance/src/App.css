@@ -68,7 +68,15 @@ p { color: #555; }
   color: #ffffff;
   border-color: #333;
 }
-
+.btn-light-outline{
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.btn-light-outline:hover{
+  background-color: #ffffff;
+  color: #333; 
+}
 /* ---  Navbar --- */
 .navbar {
   background: #ffffff;
@@ -128,6 +136,16 @@ p { color: #555; }
   color: #ffffff;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0; 
+  z-index: -1;
+  background-image: url('/src/assets/hero-image1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5); 
+}
 .hero-content {
   text-align: center; 
 }
@@ -139,7 +157,7 @@ p { color: #555; }
 }
 
 .hero-content p {
-  color: #1e1a1a;
+  color: #ffffff;
   text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
   margin-bottom: 2rem; 
@@ -642,6 +660,7 @@ p { color: #555; }
 
 .portfolio-item:hover img {
   transform: scale(1.05); 
+  filter: brightness(0.5); 
 }
 
 .portfolio-overlay {
