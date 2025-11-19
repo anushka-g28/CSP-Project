@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ConsultationBanner() {
   return (
@@ -8,7 +9,7 @@ function ConsultationBanner() {
           <h3>Book a Consultation</h3>
           <p>Schedule a complimentary 30-minute consultation to discuss your project goals and explore how we can help.</p>
         </div>
-        <a href="#" className="btn btn-light-outline">Schedule Now</a>
+        <Link to="/contact" className="btn btn-light-outline">Schedule Now</Link>
       </div>
     </section>
   );

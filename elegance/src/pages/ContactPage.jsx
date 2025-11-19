@@ -14,8 +14,6 @@ function ContactPage() {
           <Info />
         </div>
       </section>
-
-      <Consultation />
     </>
   );
 }
